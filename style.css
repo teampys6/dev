@@ -1,0 +1,102 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style: none;
+  font-family: 'Poppins';
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+.gradient-background {
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(300deg, #331D2C, #3F2E3E, #A78295);
+  background-size: 180% 180%;
+  animation: gradient-animation 18s ease infinite;
+}
+
+@keyframes gradient-animation {
+  0% {
+      background-position: 0% 50%;
+  }
+  50% {
+      background-position: 100% 50%;
+  }
+  100% {
+      background-position: 0% 50%;
+}
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.profile img {
+  width: 260px;
+  border: 3px solid #EFE1D1;
+  padding: 3px;
+  border-radius: 50%;
+}
+
+h1, h4 {
+  color: #fff;
+  font-weight: 500;
+}
+
+h4 {
+  margin-bottom: 15px;
+}
+
+h1 {
+  font-size: 1.9rem;
+  margin-bottom: 15px;
+  font-family: 'Roboto';
+}
+
+.text-op {
+  color: rgba(255, 255, 255, .6);
+  margin-bottom: 30px;
+  width: 170px;
+
+  animation: typing 3s steps(25), blink 0.5s step-end infinite alternate;
+  white-space: nowrap;
+  overflow: hidden;
+  border-right: 2px solid;
+}
+
+@keyframes typing {
+  from {
+    width: 0;
+  }
+}
+
+@keyframes blink {
+  50% {
+    border-color: transparent;
+  }
+}
+
+.social-list {
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+}
+
+.social svg {
+  margin-top: 50px;
+  color: rgba(239, 225, 209, .5);
+  transition: all .4s ease;
+}
+
+.social svg:hover {
+  transform: scale(1.1);
+  color: rgba(239, 225, 209, 1);
+}
