@@ -40,7 +40,10 @@ html {
 }
 
 .profile img {
+<<<<<<< HEAD
   user-select: none;
+=======
+>>>>>>> db83f885b31f53ee2c943eea7d50c4230aeef4f6
   width: 240px;
   border: 3px solid #EFE1D1;
   padding: 3px;
@@ -99,4 +102,10 @@ h1 {
 .social svg:hover {
   transform: scale(1.1);
   color: rgba(239, 225, 209, 1);
+}
+
+@media (max-width: 750px) {
+  .profile img {
+    width: 200px
+  }
 }
